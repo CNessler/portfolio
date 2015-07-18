@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Karma:400,700);
+@import url(http://fonts.googleapis.com/css?family=Inknut+Antiqua:400,700);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500);
+@import url(http://fonts.googleapis.com/css?family=Philosopher:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+$blueGrey: #6D8397;
+$blue: #307FA7;
+$green: #3D8C7D;
+$peach: #DF6955;
+$red: #BC242C;
+
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+  font-family: 'Open Sans', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $blue;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-family: 'Philosopher';
+  color: $peach;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+h5,  h6 {
+  font-weight: bolder;
+  color: $peach;
+}
+
+small, .font_small {font-size: 0.707em;}
