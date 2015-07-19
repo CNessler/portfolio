@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  div.body
     div.row
       div.header
         h3 Claire Nessler
@@ -9,4 +10,20 @@ block content
         a(href='/Contact') Contact Me
     div.main  
       div.row
-        p I am Claire
+        p I am an educator turned full stack developer. I am enspired by others,
+         | solving problem, and life. I strive for team development and implementation.
+         | It takes a village. 
+    div.row     
+      div.content
+        table
+          tr
+            td
+              a(href='https://hudson-eds-9127.herokuapp.com')
+                img(src='/images/farmersMarket.png')
+            td    
+              a(href='https://powerful-bastion-9902.herokuapp.com/')
+                img(src='/images/canvas.png')
+          tr
+            td Farmers Market Locator
+            td Canvas Playground
+              

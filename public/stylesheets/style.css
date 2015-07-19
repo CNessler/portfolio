@@ -23,9 +23,25 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+img {
+  height: 325px;
+  width: 550px;
+  margin: 20px; }
+
+td {
+  text-align: center;
+  font-size: 25px;
+  color: #FC5B2A; }
+
+a {
+  text-decoration: none; }
+
+.body {
+  background-color: #F8E9E9; }
+
 .main {
   width: 100%;
-  background-color: #DF6955; }
+  background-color: #FC5B2A; }
 
 .right {
   float: right; }
@@ -47,6 +63,14 @@ time, mark, audio, video {
   width: 100%;
   height: auto;
   opacity: 0.8; }
+
+.row p {
+  text-align: center;
+  margin: 0 auto;
+  color: #F8E9E9;
+  font-size: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px; }
 
 .row {
   width: 80%;
