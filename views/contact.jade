@@ -1,0 +1,9 @@
+extends layout
+block content
+  h1 Contact Me
+  form(action='sendmail.php' method='post')
+    label Email
+      input(type='email' name='email')
+    label Message
+      input(type='textarea' name='message' rows='15' cols='30')
+    input(type='submit' value='Send Message')
