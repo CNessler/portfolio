@@ -12,6 +12,9 @@ router.get('/contact', function (req, res, next) {
   res.render('contact');
 })
 
+router.get('/SendGrid', function (req, res, next) {
+  res.render('SendGrid')
+})
 // sendgrid.send(payload, function(err, json) {
 //   if (err) { console.error(err); }
 //   console.log(json);
