@@ -5,9 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// var sendgrid  = require('sendgrid')(process.env.PORT);
+
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 require('dotenv').load();
+
 
 
 var app = express();
@@ -26,6 +30,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+var dotenv = require('dotenv');
+dotenv.load();
+
+var sendgrid_username = process.env.SENDGRID_USERNAME;
+var sendgrid_password = process.env.SENDGRID_PASSWORD;
+var to = process.env.TO;
+var sendgrid = require('sendgrid')(sendgrid_username, sendgrid_password);
+
+app.post('/contact', function (req, res, next) {
+  sendgrid.send({
+  to: to,
+  from: req.body.em,
+  subject: req.body.subject,
+  text: req.body.message
+  }, function(err, json) {
+    if (err) { return console.error(err); }
+    console.log(json);
+    res.render('index')
+  })
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

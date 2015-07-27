@@ -1,9 +1,25 @@
 extends layout
 block content
-  h1 Contact Me
-  form(action='sendmail.php' method='post')
-    label Email
-      input(type='email' name='email')
-    label Message
-      input(type='textarea' name='message' rows='15' cols='30')
-    input(type='submit' value='Send Message')
+  div.body
+    div.row
+      div.header
+        h3 Contact Me
+        a(href='/Portfolio') Portfolio
+        a(href='/About') About
+        a(href='/Contact') Contact Me
+    div.main  
+      div.row
+        form(action='/contact' method='post')
+          p
+          label Email
+            input.pad(type='email' name='em')
+          p  
+          label Subject
+            input.pad(type='text' name='subject')
+          p  
+          label.mess Message
+            textarea.pad(name='message')
+          p  
+          input.submit(type='submit' value='Send Message')
+          p
+  script(src='/javascripts/dom.js' type='text/javascript')

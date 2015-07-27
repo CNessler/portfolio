@@ -133,3 +133,43 @@ h5, h6 {
 
 small, .font_small {
   font-size: 0.707em; }
+
+form {
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 10%; }
+
+label {
+  float: left;
+  width: 60%;
+  text-align: right;
+  font-size: 20px;
+  display: inline-block; }
+
+.submit {
+  height: 65px;
+  width: 15%;
+  font-size: 18px;
+  margin-top: 5%;
+  margin-right: 26%; }
+
+textarea {
+  width: 70%;
+  height: 100px;
+  display: inline-block; }
+
+.mess {
+  float: left;
+  width: 60%;
+  text-align: right;
+  font-size: 20px;
+  display: block; }
+
+.pad {
+  margin-left: 15px;
+  line-height: 1.7;
+  width: 70%;
+  display: inline-block; }
