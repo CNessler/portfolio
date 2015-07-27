@@ -4,13 +4,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+require('dotenv').load();
 
 // var sendgrid  = require('sendgrid')(process.env.PORT);
 
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-require('dotenv').load();
 
 
 
@@ -31,8 +31,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-var dotenv = require('dotenv');
-dotenv.load();
 
 var sendgrid_username = process.env.SENDGRID_USERNAME;
 var sendgrid_password = process.env.SENDGRID_PASSWORD;
