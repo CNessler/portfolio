@@ -9,6 +9,9 @@ router.get('/contact', function (req, res, next) {
   res.render('contact');
 })
 
+router.get('/about', function (req, res, next) {
+  res.render('about');
+})
 // router.post('/contact', function (req, res, next) {
 //     res.redirect('/');
 // })
