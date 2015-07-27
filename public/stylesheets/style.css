@@ -107,7 +107,7 @@ body {
   font-family: 'Open Sans', serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #307FA7; }
+  color: #3E0063; }
 
 p {
   margin-bottom: 1.3em; }
@@ -141,7 +141,7 @@ small, .font_small {
 
 form {
   border-radius: 10px;
-  color: #DF6955;
+  color: #3E0063;
   width: 100%;
   margin: 0 auto;
   text-align: center;
