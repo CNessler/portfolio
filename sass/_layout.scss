@@ -26,8 +26,13 @@ time, mark, audio, video {
 img {
 	padding-top: 8%;
   height: 325px;
-  width: 50%;
+  width: 100%;
   // margin: 20px;
+}
+.me {
+	height: 250px;
+	// border: 1px solid #C0C8EA;
+	// border-color: 1px solid #C0C8EA;
 }
 td {
   text-align: center;
@@ -60,8 +65,9 @@ a {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+
 .row {
-  width: 960px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -70,7 +76,11 @@ a {
   display: inline-block;
   vertical-align: middle;
 }
-
+.col34 {
+	width: 66%;
+	display: inline-block;
+	vertical-align: middle;
+}
 .colHalf{
   width: 50%;
   display: inline-block;
