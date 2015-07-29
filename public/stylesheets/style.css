@@ -29,8 +29,7 @@ time, mark, audio, video {
 img {
   padding-top: 8%;
   height: 325px;
-  width: 550px;
-  margin: 20px; }
+  width: 50%; }
 
 td {
   text-align: center;
@@ -51,25 +50,7 @@ a {
 .right {
   float: right; }
 
-.imgback {
-  position: relative;
-  overflow: hidden; }
-
-.imgback p {
-  position: relative;
-  z-index: 2;
-  color: white;
-  margin: 5px; }
-
-.imgback img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0.8; }
-
-.row p {
+.row p, .content {
   text-align: center;
   margin: 0 auto;
   color: #3E0063;
@@ -78,7 +59,7 @@ a {
   padding-bottom: 35px; }
 
 .row {
-  width: 80%;
+  width: 960px;
   margin: 0 auto; }
 
 .colThird {
@@ -100,10 +81,11 @@ a {
   padding-left: 30px; }
 
 html {
+  background-color: #3E0063;
   font-size: 1em; }
 
 body {
-  background-color: white;
+  background-color: #C0C8EA;
   font-family: 'Open Sans', serif;
   font-weight: 400;
   line-height: 1.7;
